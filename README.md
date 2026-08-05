@@ -13,6 +13,7 @@
 - [Step 6. 模型選擇](#step-6-模型選擇-model-selection)
 - [Step 7. 模型訓練與優化](#step-7-模型訓練與優化-model-training--optimization)
 - [Step 8. 模型測試與評估](#step-8-模型測試與評估-model-testing--evaluation)
+- [程式碼](#程式碼)
 
 ---
 
@@ -165,3 +166,6 @@
 
 📝 說明：依循 AUROC $\rightarrow$ AUPRC $\rightarrow$ F1-score 的綜合評選機制，最終由 LogReg 獲選為本次專案之最佳預測模型。其關鍵指標為 AUROC = 0.752、AUPRC = 0.678 及 F1-score = 0.751，兼具最佳的泛化表現與臨床實用解釋性。
 
+
+### 程式碼
+[🔗 專案程式碼](https://github.com/zhoonng/ML/blob/main/%E8%87%AA%E5%B7%B1%E7%89%882.0.ipynb)
