@@ -13,8 +13,6 @@
 - [Step 6. 模型選擇](#step-6-模型選擇-model-selection)
 - [Step 7. 模型訓練與優化](#step-7-模型訓練與優化-model-training--optimization)
 - [Step 8. 模型測試與評估](#step-8-模型測試與評估-model-testing--evaluation)
-- [結論與心得](#結論與心得)
-- [參考資料](#參考資料)
 
 ---
 
