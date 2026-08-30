@@ -158,14 +158,20 @@
 - 總結： 綜合整體準確率與高召回率特性，LogReg 於獨立測試集中展現最佳的泛化能力與臨床篩檢價值。
 
 ### 8.2 ROC 與 AUROC
-![p17](image/p17.png)
+![p17](image/p66.png)
 
-📝 說明：全模型疊加顯示，整體預測能力皆顯著高於隨機猜測，AUROC 落在 $0.661 \sim 0.752$ 區間。其中以 LogReg 表現最佳（AUROC = 0.752），CatBoost（0.740）與 LightGBM（0.730）次之，ExtraTrees（0.661）最為落後；LogReg 的藍色曲線在中高靈敏度區間全程包覆其他模型，代表其全門檻風險排序能力最優。
 
 ### 8.3 Precision-Recall Curve 與 AUPRC
-![p17.1](image/p17.1.png)
+![p17.1](image/p67.png)
 
-📝 說明：針對失智症的檢測能力，全模型 AUPRC 介於 $0.609 \sim 0.678$ 之間，均遠高於隨機基準線（48.50%）。其中同樣由 LogReg 取得最佳表現（AUPRC = 0.678），代表在維持高召回率（Recall）時，LogReg 能比其餘樹狀模型更穩定地掌控精確率（Precision）。
+📝 說明：於獨立測試集評估六個模型，以ROC曲線與Precision-Recall曲線比較判別能力。ROC-AUC與AUPRC均以CatBoost表現最佳，顯示其在此飲食習慣與失智症風險預測任務中，判別能力相對其他模型更穩定。
+
+### 8.4 SHAP分析
+![p17.2](image/pl.png)
+
+📝 說明：SHAP Summary Plot呈現全體樣本中各特徵對模型輸出的整體影響，結果同樣顯示APOE4_Positive與Smoking_Status_Grade為最關鍵的兩項特徵，其餘如地中海飲食、睡眠品質、發炎風險等因子也具一定影響力，兩者結果大致相符。
+
+
 
 ### 8.4 最佳模型挑選
 ![p18](image/p18.png)
